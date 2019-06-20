@@ -3,6 +3,8 @@
 Created on Wed Jun 19 13:32:33 2019
 
 @author: tjtur
+
+Requires Python 3 for pathlib
 """
 
 import os
@@ -29,8 +31,10 @@ else:
     loop_description = 'Radar Velocity products derived with WDSS-II  (<a href="http://www.wdssii.org" target="_blank">http://www.wdssii.org/</a>)<br>'
 
 # following file has to be copied into image directory
+# available at https://github.com/tjturnage/resources for download
+# if not manually putting into image directory, will need to note it's location and execute the following
+# two commands
 js_src = 'C:/data/scripts/resources/hanis_min.js'
-
 shutil.copyfile(js_src,os.path.join(image_dir,'hanis_min.js'))
 
 # there will be an index.html file created in the image directory to be subsequently opened in an internet browser
